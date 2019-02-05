@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: Arial;}
+.mySlides {display:none;}
+.About{
+  padding: 100px;
+  font-size: 50px;
+  overflow: hidden;
+  border: 1px solid #000;
+  background-color: Gray;
+}
+
+.Media{
+  background-color: Gray:
+}
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #000;
+  background-color: DimGrey ;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 100px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: White;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: Black;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+
+
+<body bgcolor= DarkSlateGray >
+
+<div class="tab">
+  <button class="tablinks">Posts</button>
+  <button class="tablinks">Media</button>
+  <button class="tablinks">Contact</button>
+</div>
+
+<div class= "About" Style= "color: white;  background-color: DarkSlateGray ">
+  <center> Hi, welcome to Basti's blog, here you will find videos, images, posts and more of Basti </center>
+</div>
+
+<div class = "Media">
+  <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fedm.muzik.1995%2Fposts%2F2297599547134742&width=500" width="620" height="492" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+  <iframe src='https://www.sociablekit.com/app/embed/index.php?embed_id=19655' frameborder='0' width="620" height='492'></iframe>
+  <iframe src='https://www.sociablekit.com/app/embed/index.php?embed_id=19654' frameborder='0' width="620" height='492'></iframe>
+</div>
+
+<div class="w3-content w3-display-container" align="center";>
+  <img class="mySlides" src="NWYR.jpg" style="width:100%">
+  <img class="mySlides" src="RayTPN.jpg" style="width:50%">
+  <img class="mySlides" src="EmmaTPN.jpg" style="width:50%">
+  <img class="mySlides" src="NormanTPN.jpg" style="width:50%">
+</div>
+
+<div>
+  <center>  HOLA  </center>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+</body>
+</html>
